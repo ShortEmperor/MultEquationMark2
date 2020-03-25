@@ -7,3 +7,5 @@ by now it's just in spanish but I'm looking forward to add other languages.
 You can modify or do whatever you want with the code, I have no problem whatsoever :)
 
 Hope you like it and find it useful.
+
+Btw, any help is more than welcome!
