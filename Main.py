@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#This code is only intended for linux
+#This code is only intended for linux however i'm working on make it available for all platforms and in multiple languages
 
 
 
@@ -11,7 +11,7 @@ def main():
 		print("Defining the matrix")
 
 
-		print("Type in the values: ")
+		print("Type in the values (They will be stored as shown): ")
 		print("|x1 y1 z1 r1|")
 		print("|x2 y2 z2 r2|")
 		print("|x3 y3 z3 r3|")
