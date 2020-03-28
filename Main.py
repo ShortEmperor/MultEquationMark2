@@ -5,8 +5,7 @@ import os
 def main():
 	try:
 		#Comment the following lines if not in windows
-		os.system("cls")
-		os.system("color 0A")
+		os.system("clear")
 		print("Definicion de la Matriz")
 
 
@@ -32,16 +31,16 @@ def main():
 		#Determinante del Sistema
 
 		DetSys = ((x1*y2*z3)+(x2*y3*z1)+(x3*y1*z2))-((x3*y2*z1)+(z2*y3*x1)+(z3*y1*x2))
-		#print(DetSys)
+
 		#Determinante de X
 		DetX = ((r1*y2*z3)+(r2*y3*z1)+(r3*y1*z2))-((r3*y2*z1)+(z2*y3*r1)+(z3*y1*r2))
-		#print(DetX)
+
 		#Determinante de Y
 		DetY = ((x1*r2*z3)+(x2*r3*z1)+(x3*r1*z2))-((x3*r2*z1)+(z2*r3*x1)+(z3*r1*x2))
-		#print(DetY)
+
 		#Determinante de Z
 		DetZ = ((x1*y2*r3)+(x2*y3*r1)+(x3*y1*r2))-((x3*y2*r1)+(r2*y3*x1)+(r3*y1*x2))
-		#print(DetZ)
+		
 		#Obtencion de las incognitas
 
 		X= DetX/DetSys
@@ -50,24 +49,24 @@ def main():
 
 		print("Los resultados son: ", "\nX=",X,"\nY=",Y,"\nZ=",Z)
 
+		#Repeticion de la funcion
 		rep = str(input("Quieres repetir la operacion?(S/n): \n>>"))
 		if rep.upper() == "S":
 			main()
 		elif rep.upper() == "N":
-			os.system("cls")
-			os.system("color 07")
+			os.system("clear")
 			exit()
 		else:
 			print("Not a real option, exiting!")
 			exit()
+	
 	#Handle Keyboard Interrupt error
-	except KeyboardInterrupt as ManualExit:
-		#Change to "clear" if in linux or IOS
-		os.system("color 07")
-		os.system("cls")
+	
+	except KeyboardInterrupt:
+		os.system("clear")
 		exit()
+	
 	finally:
-		os.system("color 07")
 		exit()
 
 if __name__=="__main__":
