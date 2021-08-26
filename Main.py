@@ -5,8 +5,6 @@ import os
 def main():
 	try:
 		#Comment the following lines if not in windows
-		os.system("cls")
-		os.system("color 0A")
 		print("Definicion de la Matriz")
 
 
@@ -54,8 +52,6 @@ def main():
 		if rep.upper() == "S":
 			main()
 		elif rep.upper() == "N":
-			os.system("cls")
-			os.system("color 07")
 			exit()
 		else:
 			print("Not a real option, exiting!")
@@ -63,11 +59,8 @@ def main():
 	#Handle Keyboard Interrupt error
 	except KeyboardInterrupt as ManualExit:
 		#Change to "clear" if in linux or IOS
-		os.system("color 07")
-		os.system("cls")
 		exit()
 	finally:
-		os.system("color 07")
 		exit()
 
 if __name__=="__main__":
